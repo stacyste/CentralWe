@@ -149,7 +149,7 @@ class SetupRewardTable2AgentDistanceCost(object):
         if action == nullAction:
             return(-abs(costOfNoMovement))
         else:
-            actionDistance = sum([abs(action[i]) for i in range(len(action))])
+            actionDistance = sum([abs(actionCoordinate) for actionCoordinate in action])
             return(-actionDistance)
 
 
@@ -197,7 +197,7 @@ class SetupRewardTable2AgentWeakStrong(object):
         return(rewardTable)
 
     def applyRewardFunction(self, state, action, nextState, agentAbilities):
-        # terminal state has no reward or cost
+        # terminal state has no rew 12:10 and 1:45ard or cost
         if state == 'terminal':
             return(0)
         #Unless already in the terminal state, incur the cost of action
@@ -213,12 +213,12 @@ class SetupRewardTable2AgentWeakStrong(object):
         agent1State = state[0]
         agent2State = state[1]
         #get special rewards -- if either state is the goal state or the trap state
-        reward = 0
+        reward = 0.0
 
         if (agent1State in self.goalStates) or (agent2State in self.goalStates):
-            reward = reward + abs(self.goalReward)
+            reward += abs(self.goalReward)
         if agent1State in self.trapStates or agent2State in self.trapStates:
-            reward = reward - abs(self.trapCost)
+            reward -= abs(self.trapCost)
         return(reward)
 
     def getCosts(self, state, action, agentAbilities):
@@ -229,13 +229,14 @@ class SetupRewardTable2AgentWeakStrong(object):
         if agent1State in self.goalStates or agent2State in self.goalStates:
             moveCost = 0
         else:
-            moveCost = sum([self.getCostOfDistance(agentAction)*agentAbility for agentAction, agentAbility in zip(action, agentAbilities)])
+            # cost of moving is the sum of the individual agent costs
+            moveCost = sum([self.getCostOfDistance(agentAction, agentAbility) for agentAction, agentAbility in zip(action, agentAbilities)])
         return(moveCost)
 
-    def getCostOfDistance(self, action, nullAction = (0,0)):
-        #Need to fix this for two agents
+    #single agent cost of distance
+    def getCostOfDistance(self, action, agentAbilityScalar, nullAction = (0,0)):
         if action == nullAction:
             return(-abs(self.costOfNoMovement))
         else:
-            actionDistance = sum([abs(action[i]) for i in range(len(action))])
-            return(-actionDistance)
+            actionDistance = sum([abs(actionCoordinate) for actionCoordinate in action])
+            return(-actionDistance*abs(agentAbilityScalar))
