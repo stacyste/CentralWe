@@ -14,27 +14,29 @@ Once the terminal state is reached, the next state will also always be the termi
 """
 
 class SetupDeterministicTransitionByStateSet2Agent(object):
-    def __init__(self, stateSet, actionSet, goalState):
+    def __init__(self, stateSet, actionSet, goalStates = []):
         self.stateSet = stateSet
         # create a joint state set from a single agent state set, add terminal state to the set
-        self.jointStateSet = [(s1, s2) for s1, s2 in itertools.product(stateSet, stateSet) if s1 != s2] + ['terminal'] 
+        self.jointStateSet = [(s1, s2) for s1, s2 in itertools.product(stateSet, stateSet) if s1 != s2] + ['terminal']
         self.jointActionSet = list(itertools.product(actionSet, actionSet))
-        self.goalState = goalState
+        self.goalStates = goalStates
 
     def __call__(self):
         transitionTable = {state: self.getStateTransition(state) for state in self.jointStateSet}
-        return(transitionTable) 
+        return (transitionTable)
 
     def getStateTransition(self, state):
-        actionTransitionDistribution = {action: self.getStateActionTransition(state, action) for action in self.jointActionSet}
-        return(actionTransitionDistribution)
-    
+        actionTransitionDistribution = {action: self.getStateActionTransition(state, action) for action in
+                                        self.jointActionSet}
+        return (actionTransitionDistribution)
+
     def getStateActionTransition(self, currentState, action):
-        if currentState == 'terminal' or self.goalState in currentState:
+        reachedGoalState = any([currentPos in self.goalStates for currentPos in currentState])
+        if currentState == 'terminal' or reachedGoalState:
             transitionDistribution = {'terminal': 1.0}
         else:
             transitionDistribution = self.getTransitionDistribution(currentState, action)
-        return(transitionDistribution)
+        return (transitionDistribution)
 
     def getTransitionDistribution(self, state, action):
         # if you directly apply the action to the current state, what the potential next state for each agent is
@@ -44,7 +46,7 @@ class SetupDeterministicTransitionByStateSet2Agent(object):
 
         agent1Fixed = False
         agent2Fixed = False
-        #if a move takes you off the board, you cannot take it and instead that agent remains stationary, if fixed = true, that agent must remain stationary
+        # if a move takes you off the board, you cannot take it and instead that agent remains stationary, if fixed = true, that agent must remain stationary
         if agent1NextState not in self.stateSet:
             agent1NextState = state[0]
             agent1Fixed = True
@@ -55,30 +57,29 @@ class SetupDeterministicTransitionByStateSet2Agent(object):
         # resulting joint state from taking into account moves off the board - is it a viable move
         onBoardPotentialNextState = (agent1NextState, agent2NextState)
 
-        #if it is viable, agents will not collide and it should be in the joint state set
-        if onBoardPotentialNextState in self.jointStateSet: 
-            return({onBoardPotentialNextState:1.0})
+        # if it is viable, agents will not collide and it should be in the joint state set
+        if onBoardPotentialNextState in self.jointStateSet:
+            return ({onBoardPotentialNextState: 1.0})
 
         # if it is not in the joint state set, there is a collision
         if agent1NextState == agent2NextState:
             # collision 1: one agent runs into the stationary other
-            if action[0] == (0,0) or action[1] == (0,0):
-                return({state : 1.0})
-            #collision 2: one agent tries to move off the board (and must stay stationary), the other collides into it there
+            if action[0] == (0, 0) or action[1] == (0, 0):
+                return ({state: 1.0})
+            # collision 2: one agent tries to move off the board (and must stay stationary), the other collides into it there
             elif agent1Fixed or agent2Fixed:
-                return({state:1.0})
+                return ({state: 1.0})
             # collision 3: a collision on the board, probabilistically sample who moves and who stays
             else:
                 agent1Moves = (agent1NextState, state[1])
-                agent2Moves= (state[0], agent2NextState)
-                return({agent1Moves: .5, agent2Moves: .5})
-        
-    
+                agent2Moves = (state[0], agent2NextState)
+                return ({agent1Moves: .5, agent2Moves: .5})
+
     def addTuples(self, tuple1, tuple2):
         lengthOfShorterTuple = min(len(tuple1), len(tuple2))
         summedTuple = tuple([tuple1[i] + tuple2[i] for i in range(lengthOfShorterTuple)])
-        return(summedTuple)
-        
+        return (summedTuple)
+
 
 """
 Reward table - 
@@ -93,6 +94,7 @@ Inputs:
     cost of taking action (0,0) - no movement 
 Output: Nested dictionary of joint state, joint action, cost/reward
 """
+
 
 class SetupRewardTable2AgentDistanceCost(object):
     def __init__(self, transitionTable, goalStates = [], trapStates = []):
