@@ -5,7 +5,7 @@ DIRNAME = os.path.dirname(__file__)
 sys.path.append(os.path.join(DIRNAME, '..'))
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
-from visualize.draw import DrawGrid, DrawCircles, DrawPointsAndSaveImage, DrawRewards, TransformCoord, DrawTrajectoryColor, DrawPolicyArrows
+from visualize.drawOnline import TransformCoord, DrawGrid, DrawRewards, DrawCircles, DrawShade, DrawTrajectoryColor, DrawPolicyArrows, Display
 from visualize.initialization import initializeScreen
 
 import pandas as pd
@@ -42,14 +42,13 @@ def samplePathToGoal(position, policy, transition, goals):
     return trajectory
 
 
-
 def main():
     gridNumberX = 5
     gridNumberY = 5
     states = list(itertools.product(range(gridNumberX), range(gridNumberY)))
     actions = [(-1, 0), (0, 1), (1, 0), (0, -1), (0, 0)]
 
-    goals = [(1, 2), (2,4)]
+    goals = [(0, 3), (4,0)]
     gettransition = SetupDeterministicTransitionByStateSet2Agent(states, actions, goals)
     transitionTable = gettransition()
 
@@ -72,48 +71,44 @@ def main():
 
     GREEN = (0, 255, 0)
     RED = (255, 0, 0)
-    colorList = [GREEN, RED]
+    agentsColor = [GREEN, RED]
 
     fullScreen = False
     screenWidth = 800
     screenHeight = 800
     screen = initializeScreen(fullScreen, screenWidth, screenHeight)
 
-    gridPixelSize = min(screenHeight// gridNumberX, screenWidth// gridNumberY)
+    gridPixelSize = min(screenHeight // gridNumberX, screenWidth // gridNumberY)
     drawGrid = DrawGrid(screen, (gridNumberX, gridNumberY), gridPixelSize)
 
     currentDir = os.getcwd()
     rewardIconPath = os.path.join(currentDir, 'visualize', 'star.png')
     drawRewards = DrawRewards(screen, gridPixelSize, rewardIconPath)
 
+    centerTransformCoord = TransformCoord(gridPixelSize, location='center')
     pointsWidth = (10, 20)
-    drawCircles = DrawCircles(screen, colorList, pointsWidth)
+    drawCircles = DrawCircles(screen, centerTransformCoord, agentsColor, pointsWidth)
 
     leftTransformCoord = TransformCoord(gridPixelSize, location='left')
-    GREENBOX = (0, 255, 0, 50)
-    REDBOX = (255, 0, 0, 50)
-    boxColors = [GREENBOX, REDBOX]
-    drawTrajectoryColor = DrawTrajectoryColor(screen, leftTransformCoord, boxColors, gridPixelSize)
+    drawShade = DrawShade(screen, leftTransformCoord, gridPixelSize)
+    drawTrajectoryColor = DrawTrajectoryColor(drawShade, agentsColor)
 
-    centerTransformCoord = TransformCoord(gridPixelSize, location='center')
-    arrowUnitSize = gridPixelSize//2
+    arrowUnitSize = gridPixelSize // 2
     drawPolicyArrows = DrawPolicyArrows(screen, centerTransformCoord, arrowUnitSize, actions)
 
-
-    drawPointsFromLocationDfandSaveImage = DrawPointsAndSaveImage(screen, drawGrid, drawRewards, drawCircles, drawTrajectoryColor, drawPolicyArrows, gridPixelSize)
-
+    display = Display(screen, drawGrid, drawRewards, drawCircles, drawTrajectoryColor, drawPolicyArrows)
 
 
     parentDir = os.path.abspath(os.path.join(currentDir, os.pardir))
-    dataIndex = 1
-    imageFolderName = 'IWDetTransition1GoalNoBarrier' + str(dataIndex)
+    dataIndex = 4
+    imageFolderName = 'IWDetTransition'+ str(len(goals)) + 'GoalNoBarrier' + str(dataIndex)
 
-    saveImageDir = os.path.join(os.path.join(parentDir, 'demo'), imageFolderName)
+    saveImageDir = os.path.join(os.path.join(currentDir, 'demo'), imageFolderName)
     if not os.path.exists(saveImageDir):
         os.makedirs(saveImageDir)
 
-    saveImage = False
-    drawPointsFromLocationDfandSaveImage(goals, trajectoryToDraw, trajectory, policy)
+    display(goals, trajectory, policy, saveImageDir, saveImage = True)
+
 
 if __name__ == '__main__':
     main()

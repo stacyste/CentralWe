@@ -7,3 +7,4 @@ def initializeScreen(fullScreen, screenWidth, screenHeight):
     else:
         screen = pg.display.set_mode((screenWidth, screenHeight))
     return screen
+
