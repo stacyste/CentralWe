@@ -3,8 +3,7 @@ sys.path.append('../src/')
 
 import unittest
 from ddt import ddt, data, unpack
-import grosseJointPlanner as targetCode
-import pandas as pd
+from src import grosseJointPlanner as targetCode
 import itertools
 
 @ddt

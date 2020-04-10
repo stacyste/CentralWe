@@ -3,9 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="bcb85462-7e83-4a52-ad25-85ab6617baf6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize/draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize/initialization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/initialization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizeJointMDP.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualizeJointMDP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JointMDPSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/JointMDPSolver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ValueIteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ValueIteration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grosseJointPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/grosseJointPlanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testGrosseJointPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGrosseJointPlanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizeJointMDP.py" beforeDir="false" afterPath="$PROJECT_DIR$/exec/visualizeJointMDP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizeWithOnlineDisplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,63 +45,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visualizeJointMDP.py">
+        <entry file="file://$PROJECT_DIR$/exec/visualizeJointMDP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="115" column="84" selection-start-line="115" selection-start-column="78" selection-end-line="115" selection-end-column="84" />
+            <state relative-caret-position="336">
+              <caret line="106" column="25" selection-start-line="106" selection-end-line="107" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#560#785#0" />
-                <element signature="e#851#1356#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visualize/draw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="141" column="59" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#1016#2036#0" />
-                <element signature="e#5452#6103#0" />
-                <element signature="e#4742#5688#0" />
-                <element signature="e#7343#8048#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
+        <entry file="file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="122" column="52" lean-forward="true" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#74#725#0" />
-                <element signature="e#21#1041#0" />
-                <element signature="e#1082#1681#0" />
-                <element signature="e#3930#4635#0" />
-                <element signature="e#3797#4176#0" />
-                <element signature="e#5681#7087#0" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visualizeWithOnlineDisplay.py">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="369">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -103,19 +107,23 @@
         <option value="$PROJECT_DIR$/visualize/draw.py" />
         <option value="$PROJECT_DIR$/visualize/drawOnline.py" />
         <option value="$PROJECT_DIR$/visualizeWithOnlineDisplay.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py" />
+        <option value="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="726" />
-    <option name="width" value="714" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="29" />
+    <option name="y" value="23" />
+    <option name="width" value="1411" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,18 +134,23 @@
             <path>
               <item name="CentralWe" type="b2602c69:ProjectViewProjectNode" />
               <item name="CentralWe" type="462c0819:PsiDirectoryNode" />
-              <item name="visualize" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CentralWe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CentralWe" type="462c0819:PsiDirectoryNode" />
+              <item name="exec" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -149,6 +162,13 @@
         <option name="myUseModuleSdk" value="true" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/exec" />
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,7 +196,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualizeWithOnlineDisplay.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,49 +216,61 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583111341376</updated>
-      <workItem from="1583111345435" duration="5786000" />
+      <workItem from="1583111345435" duration="8480000" />
+      <workItem from="1585346549807" duration="275000" />
+      <workItem from="1586539685637" duration="1118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5786000" />
+    <option name="totallyTimeSpent" value="9873000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15489914" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25720462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3292232" />
-      <window_info anchor="bottom" id="Python Console" weight="0.3292232" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3292232" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50072044" side_tool="true" weight="0.3292232" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.3292232" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.34401974" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39950678" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292232" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.3292232" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3292232" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3292232" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CentralWe$visualizeJointMDP.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1583262608770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CentralWe$visualizeJointMDP.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1583270264446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CentralWe$visualizeWithOnlineDisplay.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1586540734953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/grosseJointPlanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visualize/initialization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -246,54 +278,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualize/draw.py">
+    <entry file="file://$PROJECT_DIR$/visualize/visualizations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="141" column="59" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="59" />
+        <state relative-caret-position="220">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1016#2036#0" />
-            <element signature="e#5452#6103#0" />
-            <element signature="e#4742#5688#0" />
-            <element signature="e#7343#8048#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualizeJointMDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="115" column="84" selection-start-line="115" selection-start-column="78" selection-end-line="115" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#560#785#0" />
-            <element signature="e#851#1356#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualizeWithOnlineDisplay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="122" column="52" lean-forward="true" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
+        <state relative-caret-position="716">
+          <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#74#725#0" />
-            <element signature="e#21#1041#0" />
-            <element signature="e#1082#1681#0" />
-            <element signature="e#3930#4635#0" />
-            <element signature="e#3797#4176#0" />
-            <element signature="e#5681#7087#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="141" column="59" selection-start-line="141" selection-start-column="53" selection-end-line="141" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JointMDPSolver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ValueIteration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exec/visualizeJointMDP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="106" column="25" selection-start-line="106" selection-end-line="107" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

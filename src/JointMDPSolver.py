@@ -4,12 +4,6 @@
 # In[1]:
 
 
-import numpy as np
-import itertools
-import sys
-import pandas as pd
-
-
 # In[2]:
 
 
@@ -19,8 +13,8 @@ import pandas as pd
 
 # In[3]:
 
-from grosseJointPlanner import *
-from ValueIteration import BoltzmannValueIteration
+from src.grosseJointPlanner import *
+from src.ValueIteration import BoltzmannValueIteration
 
 
 # In[4]:
