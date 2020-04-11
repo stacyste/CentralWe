@@ -102,7 +102,7 @@ class SetupRewardTable2AgentDistanceCost(object):
         self.goalStates = goalStates
         self.trapStates = trapStates
         
-    def __call__(self, goalReward = 10, trapCost = -100, costOfNoMovement = .1):
+    def __call__(self, goalReward = 10, trapCost = -100, costOfMovement = 1, costOfNoMovement = .1):
         rewardTable = {state:{action: {nextState: self.applyRewardFunction(state, action, nextState, goalReward, trapCost, costOfNoMovement) \
                                         for nextState in nextStateDict.keys()} 
                                 for action, nextStateDict in actionDict.items()} 
@@ -119,7 +119,7 @@ class SetupRewardTable2AgentDistanceCost(object):
         # if the intended next state is a special tile, 
         # the cost/reward of s, a, s' corresponds to the value of that tile
         specialTileCosts = self.getSpecialTileRewards(nextState, trapCost, goalReward)
-        return(movementCosts+specialTileCosts)
+        return(movementCosts + specialTileCosts)
 
     def getSpecialTileRewards(self, state, trapCost, goalReward):
         # if the next state is a special tile, the agent receives the rewards/costs of that location
@@ -241,4 +241,5 @@ class SetupRewardTable2AgentWeakStrong(object):
             return(-abs(self.costOfNoMovement))
         else:
             actionDistance = sum([abs(actionCoordinate) for actionCoordinate in action])
-            return(-actionDistance*abs(agentAbilityScalar))
+            cost = -actionDistance * abs(agentAbilityScalar)
+            return cost

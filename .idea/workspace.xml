@@ -2,41 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcb85462-7e83-4a52-ad25-85ab6617baf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JointMDPSolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/JointMDPSolver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ValueIteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ValueIteration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4/demoPics/0005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grosseJointPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/grosseJointPlanner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testGrosseJointPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/testGrosseJointPlanner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizeJointMDP.py" beforeDir="false" afterPath="$PROJECT_DIR$/exec/visualizeJointMDP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizeWithOnlineDisplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/Demo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grosseJointPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/grosseJointPlanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualize/drawOnline.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/drawOnline.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,23 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exec/visualizeJointMDP.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="106" column="25" selection-start-line="106" selection-end-line="107" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="-2010">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -71,10 +80,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py">
+        <entry file="file://$PROJECT_DIR$/src/grosseJointPlanner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="211">
+              <caret line="99" column="67" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#892#4352#0" />
+                <element signature="e#2204#4130#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,6 +105,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>game</find>
+      <find>costOfNoMovement</find>
+      <find>agentAbilities</find>
+      <find>agentAbility</find>
+      <find>cost</find>
+      <find>star</find>
+      <find>goals</find>
+      <find>trapCost</find>
     </findStrings>
     <replaceStrings>
       <replace>screen</replace>
@@ -105,9 +126,10 @@
         <option value="$PROJECT_DIR$/visualize/initialization.py" />
         <option value="$PROJECT_DIR$/visualizeJointMDP.py" />
         <option value="$PROJECT_DIR$/visualize/draw.py" />
-        <option value="$PROJECT_DIR$/visualize/drawOnline.py" />
         <option value="$PROJECT_DIR$/visualizeWithOnlineDisplay.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py" />
+        <option value="$PROJECT_DIR$/src/grosseJointPlanner.py" />
+        <option value="$PROJECT_DIR$/visualize/drawOnline.py" />
         <option value="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" />
       </list>
     </option>
@@ -218,24 +240,24 @@
       <updated>1583111341376</updated>
       <workItem from="1583111345435" duration="8480000" />
       <workItem from="1585346549807" duration="275000" />
-      <workItem from="1586539685637" duration="1118000" />
+      <workItem from="1586539685637" duration="11559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9873000" />
+    <option name="totallyTimeSpent" value="20314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25720462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22550432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.34401974" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39950678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.16029593" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20345253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,18 +281,38 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CentralWe$visualizeJointMDP.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1583270264446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CentralWe$visualizeWithOnlineDisplay.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1586540734953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CentralWe$visualizeWithOnlineDisplay.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1586638249628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>len(optimalValues)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>optimalValues</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>policy[initialState]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>action</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>policy(initialState)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/grosseJointPlanner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/visualize/initialization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -284,16 +326,6 @@
           <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -315,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ValueIteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exec/visualizeJointMDP.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -332,17 +357,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-1/demoPics/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-2/demoPics/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ValueIteration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state>
+          <caret selection-end-line="53" />
+          <folding>
+            <element signature="e#56#2502#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/0003.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/0002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/0003.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/0001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/0003.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/0002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/0003.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/0001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/0004.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/0002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/0002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-2/0001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-1/0003.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-1/0002.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-1/0001.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-2/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-1/0000.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="152" column="41" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/grosseJointPlanner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="99" column="67" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#892#4352#0" />
+            <element signature="e#2204#4130#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="-2010">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

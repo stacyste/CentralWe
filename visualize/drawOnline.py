@@ -42,16 +42,16 @@ class DrawGrid:
             pygame.draw.line(self.screen, self.gridColor, (0, gridY), (upperBoundX, gridY), self.gridLineWidth)
 
 
-class DrawRewards:
-    def __init__(self, screen, gridPixelSize, rewardIconPath):
+class DrawObject:
+    def __init__(self, screen, gridPixelSize, pngPath):
         self.screen = screen
         self.gridPixelSize = gridPixelSize
-        self.rewardIconPath = rewardIconPath
+        self.pngPath = pngPath
 
-    def __call__(self, rewardCoords):
-        rewardSymbol = pygame.image.load(self.rewardIconPath)
+    def __call__(self, objCoords):
+        rewardSymbol = pygame.image.load(self.pngPath)
         rewardSymbol = pygame.transform.scale(rewardSymbol, (self.gridPixelSize//2, self.gridPixelSize//2))
-        rewardsLocation = [np.array(coord) * self.gridPixelSize + self.gridPixelSize//4 for coord in rewardCoords]
+        rewardsLocation = [np.array(coord) * self.gridPixelSize + self.gridPixelSize//4 for coord in objCoords]
         for rewardCoord in rewardsLocation:
             self.screen.blit(rewardSymbol, rewardCoord)
 
@@ -131,7 +131,7 @@ class DrawPolicyArrows:
 
 
 class Display:
-    def __init__(self, screen, drawGrid, drawRewards, drawCircles, drawTrajectoryColor, drawPolicyArrows,
+    def __init__(self, screen, drawGrid, drawRewards, drawBlock, drawCircles, drawTrajectoryColor, drawPolicyArrows,
                  pointExtendTime = 100, FPS = 60):
         self.screen = screen
         self.FPS = FPS
@@ -139,17 +139,19 @@ class Display:
 
         self.drawGrid = drawGrid
         self.drawRewards = drawRewards
+        self.drawBlock = drawBlock
         self.drawCircles = drawCircles
         self.drawTrajectoryColor = drawTrajectoryColor
         self.drawPolicyArrows = drawPolicyArrows
 
-    def __call__(self, rewardCoords, trajectory, policy, saveImageDir = None, saveImage = False):
+    def __call__(self, rewardCoords, blockCoords, trajectory, policy, saveImageDir = None, saveImage = False):
         fpsClock = pygame.time.Clock()
 
         for timeStep in range(len(trajectory)):
             fpsClock.tick(self.FPS)
             self.drawGrid()
             self.drawRewards(rewardCoords)
+            self.drawBlock(blockCoords)
 
             passedStates = trajectory[:timeStep+1]
             for previousState in passedStates:
