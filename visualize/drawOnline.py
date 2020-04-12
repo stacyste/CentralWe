@@ -131,7 +131,7 @@ class DrawPolicyArrows:
 
 
 class Display:
-    def __init__(self, screen, drawGrid, drawRewards, drawBlock, drawCircles, drawTrajectoryColor, drawPolicyArrows,
+    def __init__(self, screen, drawGrid, drawRewards, drawBlock, drawPuddles, drawCircles, drawTrajectoryColor, drawPolicyArrows,
                  pointExtendTime = 100, FPS = 60):
         self.screen = screen
         self.FPS = FPS
@@ -140,11 +140,12 @@ class Display:
         self.drawGrid = drawGrid
         self.drawRewards = drawRewards
         self.drawBlock = drawBlock
+        self.drawPuddles = drawPuddles
         self.drawCircles = drawCircles
         self.drawTrajectoryColor = drawTrajectoryColor
         self.drawPolicyArrows = drawPolicyArrows
 
-    def __call__(self, rewardCoords, blockCoords, trajectory, policy, saveImageDir = None, saveImage = False):
+    def __call__(self, rewardCoords, blockCoords, puddleCoords, trajectory, policy, saveImageDir = None, saveImage = False):
         fpsClock = pygame.time.Clock()
 
         for timeStep in range(len(trajectory)):
@@ -152,6 +153,7 @@ class Display:
             self.drawGrid()
             self.drawRewards(rewardCoords)
             self.drawBlock(blockCoords)
+            self.drawPuddles(puddleCoords)
 
             passedStates = trajectory[:timeStep+1]
             for previousState in passedStates:

@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcb85462-7e83-4a52-ad25-85ab6617baf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta2/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition1GoalNoBarrier1beta3/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta2/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier1beta3/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta2/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier2beta3/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta2/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier3beta3/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta2/demoPics/0005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/Demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/demoPics/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" beforeDir="false" afterPath="$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/grosseJointPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/grosseJointPlanner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualize/drawOnline.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/drawOnline.py" afterDir="false" />
@@ -67,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2010">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="56">
+              <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -82,13 +30,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/grosseJointPlanner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="99" column="67" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="67" />
+            <state relative-caret-position="248">
+              <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#892#4352#0" />
-                <element signature="e#2204#4130#0" />
+                <element signature="e#4774#7577#0" />
+                <element signature="e#8369#11336#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ValueIteration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -112,9 +82,12 @@
       <find>star</find>
       <find>goals</find>
       <find>trapCost</find>
+      <find>puddleLoc</find>
+      <find>transitionTable</find>
     </findStrings>
     <replaceStrings>
       <replace>screen</replace>
+      <replace>puddleStates</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -162,6 +135,11 @@
               <item name="CentralWe" type="b2602c69:ProjectViewProjectNode" />
               <item name="CentralWe" type="462c0819:PsiDirectoryNode" />
               <item name="exec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CentralWe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CentralWe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,24 +218,24 @@
       <updated>1583111341376</updated>
       <workItem from="1583111345435" duration="8480000" />
       <workItem from="1585346549807" duration="275000" />
-      <workItem from="1586539685637" duration="11559000" />
+      <workItem from="1586539685637" duration="22952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20314000" />
+    <option name="totallyTimeSpent" value="31707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22550432" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0943804" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49927953" visible="true" weight="0.16029593" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.20345253" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49927953" weight="0.29839703" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.20345253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -279,19 +257,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CentralWe$visualizeJointMDP.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1583270264446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CentralWe$visualizeWithOnlineDisplay.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1586638249628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CentralWe$visualizeWithOnlineDisplay.coverage" NAME="visualizeWithOnlineDisplay Coverage Results" MODIFIED="1586668327978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>len(optimalValues)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>optimalValues</expression-string>
+        <expression-string>policy[(1,0), (4,3)]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -301,12 +285,37 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>action</expression-string>
+        <expression-string>transitionTable[((0, 1), (4,4))]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>policy(initialState)</expression-string>
+        <expression-string>transitionTable[(0, 1), (4,4)]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>transitionTable == transitionTable1</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>transitionTableTrue[initialState] == transitionTable2[initialState]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>transitionTable2[initialState]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>transitionTableTrue[initialState]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>possibleNextStatesTuple</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -365,16 +374,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ValueIteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="53" />
-          <folding>
-            <element signature="e#56#2502#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/IWDetTransition2GoalNoBarrier4beta3/0003.png">
       <provider selected="true" editor-type-id="images" />
@@ -436,34 +435,42 @@
     <entry file="file://$PROJECT_DIR$/demo/unambiguous2Goal2AgentWithEqualCost-1/0000.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
+    <entry file="file://$PROJECT_DIR$/src/ValueIteration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="152" column="41" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/grosseJointPlanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="99" column="67" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="67" />
+        <state relative-caret-position="248">
+          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#892#4352#0" />
-            <element signature="e#2204#4130#0" />
+            <element signature="e#4774#7577#0" />
+            <element signature="e#8369#11336#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exec/visualizeWithOnlineDisplay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2010">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="56">
+          <caret line="171" column="37" selection-start-line="171" selection-start-column="37" selection-end-line="171" selection-end-column="37" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize/drawOnline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

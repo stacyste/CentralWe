@@ -90,11 +90,31 @@ def main():
         # initialState = ((0, 0), (4, 4))
 
         # 4-2:
-        goals = [(2, 1), (4, 0)]
-        agentAbilities = [2, 1] #  = agentActionCosts for each step
-        blocks = [(2, 0), (1, 1)]
-        initialState = ((0, 0), (4, 4))
+        # goals = [(2, 1), (4, 0)]
+        # agentAbilities = [2, 1] #  = agentActionCosts for each step
+        # blocks = [(2, 0), (1, 1)]
+        # initialState = ((0, 0), (4, 4))
 
+        # 5-1-1:
+        # goals = [(0, 2), (1, 3)]
+        # agentAbilities = [1, 1] #  = agentActionCosts for each step
+        # blocks = []
+        # initialState = ((0, 0), (4, 4))
+        # puddles = [(0, 1)]
+
+        # 5-1-2:
+        # goals = [(0, 2), (1, 3)]
+        # agentAbilities = [1, 1] #  = agentActionCosts for each step
+        # blocks = []
+        # initialState = ((0, 0), (4, 4))
+        # puddles = [(0, 1), (1, 0)]
+
+        # 5-2:
+        goals = [(2, 1), (4, 0)]
+        agentAbilities = [1, 1] #  = agentActionCosts for each step
+        blocks = []
+        initialState = ((0, 0), (4, 4))
+        puddles = [(1, 1), (1, 0)]
 
     ##
         gridNumberX = 5
@@ -102,7 +122,7 @@ def main():
         states = list(itertools.product(range(gridNumberX), range(gridNumberY)))
         actions = [(-1, 0), (0, 1), (1, 0), (0, -1), (0, 0)]
 
-        gettransition = SetupDeterministicTransitionByStateSet2Agent(states, actions, goals)
+        gettransition = SetupProbTransitionWithPuddle2Agent(states, actions, goals, puddles)
         transitionTable = gettransition()
 
         getReward = SetupRewardTable2AgentWeakStrong(transitionTable, goals, blocks)
@@ -137,6 +157,9 @@ def main():
         blockIconPath = os.path.join(currentDir, 'visualize', 'block.png')
         drawBlock = DrawObject(screen, gridPixelSize, blockIconPath)
 
+        puddleIconPath = os.path.join(currentDir, 'visualize', 'water.png')
+        drawPuddles = DrawObject(screen, gridPixelSize, puddleIconPath)
+
         centerTransformCoord = TransformCoord(gridPixelSize, location='center')
         pointsWidth = (10, 10)
         drawCircles = DrawCircles(screen, centerTransformCoord, agentsColor, pointsWidth)
@@ -148,7 +171,7 @@ def main():
         arrowUnitSize = gridPixelSize // 2
         drawPolicyArrows = DrawPolicyArrows(screen, centerTransformCoord, arrowUnitSize, actions)
 
-        display = Display(screen, drawGrid, drawRewards, drawBlock, drawCircles, drawTrajectoryColor, drawPolicyArrows)
+        display = Display(screen, drawGrid, drawRewards, drawBlock, drawPuddles, drawCircles, drawTrajectoryColor, drawPolicyArrows)
 
 
         dataIndex = i
@@ -158,7 +181,7 @@ def main():
         if not os.path.exists(saveImageDir):
             os.makedirs(saveImageDir)
 
-        display(goals, blocks, trajectory, policy, saveImageDir, saveImage = True)
+        display(goals, blocks, puddles, trajectory, policy, saveImageDir, saveImage = True)
 
 
 if __name__ == '__main__':

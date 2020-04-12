@@ -81,6 +81,124 @@ class SetupDeterministicTransitionByStateSet2Agent(object):
         return (summedTuple)
 
 
+class SetupProbTransitionWithPuddle2Agent(object):
+    def __init__(self, stateSet, actionSet, goalStates = [], puddleStates = []):
+        self.stateSet = stateSet
+        # create a joint state set from a single agent state set, add terminal state to the set
+        self.jointStateSet = [(s1, s2) for s1, s2 in itertools.product(stateSet, stateSet) if s1 != s2] + ['terminal']
+        self.actionSet = actionSet
+        self.jointActionSet = list(itertools.product(actionSet, actionSet))
+        self.goalStates = goalStates
+        self.puddleStates = puddleStates
+
+    def __call__(self):
+        transitionTable = {state: self.getStateTransition(state) for state in self.jointStateSet}
+        return (transitionTable)
+
+    def getStateTransition(self, state):
+        actionTransitionDistribution = {action: self.getStateActionTransition(state, action) for action in
+                                        self.jointActionSet}
+        return (actionTransitionDistribution)
+
+    def getStateActionTransition(self, currentState, action):
+        reachedGoalState = any([currentPos in self.goalStates for currentPos in currentState])
+        if currentState == 'terminal' or reachedGoalState:
+            transitionDistribution = {'terminal': 1.0}
+        else:
+            transitionDistribution = self.getTransitionDistribution(currentState, action)
+        return (transitionDistribution)
+
+    def getTransitionDistribution(self, state, action):
+        agent1CurrentState, agent2CurrentState = state
+        agent1Action, agent2Action = action
+
+        agent1InPuddle = agent1CurrentState in self.puddleStates
+        agent2InPuddle = agent2CurrentState in self.puddleStates
+
+        agent1ActionDist = self.getAgentActionDist(agent1Action, agent1InPuddle)
+        agent2ActionDist = self.getAgentActionDist(agent2Action, agent2InPuddle)
+
+        actionDist = {(agent1Action, agent2Action): agent1ActionDist[agent1Action] * agent2ActionDist[agent2Action]
+                      for agent1Action in list(agent1ActionDist.keys()) for agent2Action in
+                      list(agent2ActionDist.keys())}
+
+        scaleDictValues = lambda scale, dic: {dictKey: value* scale for dictKey, value in zip(dic.keys(), dic.values())}
+        transitionDists = [scaleDictValues(scale, self.getTransitionWithSingleStateActionPair(state, action))
+                           for action, scale in zip(actionDist.keys(), actionDist.values())]
+        possibleNextStatesWithDuplicates = [list(transition.keys()) for transition in transitionDists]
+
+        possibleNextStates = np.unique(np.concatenate(possibleNextStatesWithDuplicates), axis=0)
+        possibleNextStatesTuple = tuple([tuple([tuple(agentState) for agentState in agentStates]) for agentStates in possibleNextStates])
+
+        transitionDistCombined = {nextState: sum([transition.get(nextState, 0) for transition in transitionDists]) for
+                                  nextState in possibleNextStatesTuple}
+
+        normalizeValues = lambda dic: {dictKey: value / sum(dic.values()) for dictKey, value in
+                                       zip(dic.keys(), dic.values())}
+        transitionDistribution = normalizeValues(transitionDistCombined)
+        return transitionDistribution
+
+
+    def getTransitionWithSingleStateActionPair(self, state, action):
+        agent1CurrentState, agent2CurrentState = state
+        agent1Action, agent2Action = action
+        agent1NextState = self.addTuples(agent1CurrentState, agent1Action)
+        agent2NextState = self.addTuples(agent2CurrentState, agent2Action)
+
+        agent1Fixed = False
+        agent2Fixed = False
+        # if a move takes you off the board, you cannot take it and instead that agent remains stationary, if fixed = true, that agent must remain stationary
+        if agent1NextState not in self.stateSet:
+            agent1NextState = state[0]
+            agent1Fixed = True
+        if agent2NextState not in self.stateSet:
+            agent2NextState = state[1]
+            agent2Fixed = True
+
+        # resulting joint state from taking into account moves off the board - is it a viable move
+        onBoardPotentialNextState = (agent1NextState, agent2NextState)
+
+        # if it is viable, agents will not collide and it should be in the joint state set
+        if onBoardPotentialNextState in self.jointStateSet:
+            return ({onBoardPotentialNextState: 1.0})
+
+        # if it is not in the joint state set, there is a collision
+        if agent1NextState == agent2NextState:
+            # collision 1: one agent runs into the stationary other
+            if action[0] == (0, 0) or action[1] == (0, 0):
+                return ({state: 1.0})
+            # collision 2: one agent tries to move off the board (and must stay stationary), the other collides into it there
+            elif agent1Fixed or agent2Fixed:
+                return ({state: 1.0})
+            # collision 3: a collision on the board, probabilistically sample who moves and who stays
+            else:
+                agent1Moves = (agent1NextState, agent2CurrentState)
+                agent2Moves = (agent1CurrentState, agent2NextState)
+                return ({agent1Moves: .5, agent2Moves: .5})
+
+    def addTuples(self, tuple1, tuple2):
+        lengthOfShorterTuple = min(len(tuple1), len(tuple2))
+        summedTuple = tuple([tuple1[i] + tuple2[i] for i in range(lengthOfShorterTuple)])
+        return (summedTuple)
+
+    def getAgentActionDist(self, agentAction, agentInPuddle):
+        if agentInPuddle:
+            agentActionDist = {action: 1/len(self.actionSet) for action in self.actionSet}
+        else:
+            agentActionDist = {agentAction: 1}
+
+        return agentActionDist
+
+    def stayWithinBound(self, currentState, intendedNextState):
+        agentFixed = False
+        if intendedNextState not in self.stateSet:
+            agentFixed = False
+            return agentFixed, currentState
+        else:
+            return agentFixed, intendedNextState
+
+
+
 """
 Reward table - 
 Inputs:
